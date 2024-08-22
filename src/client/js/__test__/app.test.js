@@ -1,10 +1,6 @@
-import { fetchWeaterData } from "../app";
+import { calculateTripDuration } from "../app";
 
-test('should fetch weather data for the given', async () =>{
-    const lat = 51.507;
-    const lng = -0.1278;
-    const date = '2024-08-21';
-
-    const weatherData = await fetchWeaterData(lat,lng,date);
-    expect(weatherData.temp).toBeDefined();
+test('calculateTripDuration should return the correct number of days', () => {
+    const duration = calculateTripDuration('2024-08-22' , '2024-08-24');
+    expect(duration).toBe(2);
 })

@@ -8,23 +8,23 @@
 <body>
     <div id="app">
         <h1>Tala Travel Planner</h1>
+        
+        <!-- <img src="../img/travel.png" alt="Tala Travel Logo"/> -->
 
-        <img src="../img/travel.png" alt="logo of the travel planner"/>
+        <form id="travel-form">
+            <label for="location">Destination:</label>
+            <input type="text" id="location" name="location" placeholder="Enter destination" required>
 
-        <form id="trip-form">
-            <label for="location">Location</label>
-            <input type="text" id="location" name="location" required>
-
-            <label for="start-date">Start date:</label>
+            <label for="start-date">Start Date:</label>
             <input type="date" id="start-date" name="start-date" required>
 
-            <label for="end-date">End date:</label>
-            <input type="date" id="end-date" name="end-date" required>
+            <label for="end-date">End Date:</label>
+            <input type="date" name="end-date" id="end-date" required>
 
-            <button type="submit">Plan Trip</button>
+            <button type="submit">Get trip Info</button>
         </form>
 
-        <div id="trip-details"></div>
+        <div id="trip-info"></div>
     </div>
 </body>
 </html>
