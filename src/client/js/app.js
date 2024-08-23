@@ -49,7 +49,7 @@ const displayTripInfo = (coordinates, weather, image, startDate, endDate, tripDu
 
     tripInfoDiv.innerHTML = `
       <h2>Trip to ${coordinates.countryName}</h2>
-      <img src="${image}" alt="${coordinates.countryName}">
+      <img src="${image}" alt="${coordinates.countryName}" class="trip-img">
       <p>Trip Start Date: ${startDate}</p>
       <p>End Date: ${endDate}</p>
       <p>Days until the trip start: ${countdown}</p>
